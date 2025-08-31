@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Apology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff4d6d;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff4d6d;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff1f4b;
+    }
+    .sorry-message {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #444;
+      display: none;
+    }
+    .sorry-message span {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      background: #ffe6ea;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #ff1f4b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Apology for Shehrzadi Malika 🌸</h1>
+    <p>
+      I'm so sorry Shehrzadi Malika. You are my very very good friend, and I can't lose you. 
+      Itne efforts tau bante hi hain because I really don’t want you to go. 
+      Itna maza ata tha apkay saath, and I don’t want those moments to end. 
+      Please wapis ajaooo naa 💖
+    </p>
+    <button onclick="showSurprise()">Ek surprise hai apkeliye, ye button press kro 💌</button>
+    <div id="surprise" class="sorry-message"></div>
+  </div>  <script>
+    function showSurprise() {
+      let container = document.getElementById("surprise");
+      container.style.display = "block";
+      container.innerHTML = "";
+      for (let i = 0; i < 500; i++) {
+        let span = document.createElement("span");
+        span.innerText = "I am Sorry";
+        container.appendChild(span);
+      }
+    }
+  </script></body>
+</html>
